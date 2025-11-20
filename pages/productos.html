@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos - Soluciones Diarias</title>
+    <link rel="stylesheet" href="../style/products.css">
+    <link href="https://fonts.googleapis.com/css2?family=Stack+Sans+Headline:wght@200..700&display=swap" rel="stylesheet">
+    <!--TITULO-->
+    <link href="https://fonts.googleapis.com/css2?family=Stack+Sans+Notch:wght@200..700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+    <div class="logo">
+        <a href="../index.html">
+            <h1>Soluciones Diarias</h1>
+        </a>
+    </div>
+    <nav>
+        <li><a href="../index.html">INICIO</a></li>
+        <li><a href="historia.html">HISTORIA</a></li>
+        <li><a href="SobreNos.html">SOBRE NOSOTROS</a></li>
+        <li><a href="productos.html">PRODUCTOS</a></li>
+        <li><a href="contactanos.html">CONTACTANOS</a></li>
+    </nav>
+    <div class="acciones">
+        <div class="carrito">
+            <a href="./carrito.html">
+                <img src="../img/carritoCompras.png" alt="Carrito">
+            </a>
+        </div>
+
+    <div class="register">
+        <a id="btn-login-logout" class="btn-usuario">...</a>
+    </div>
+
+    </div>
+    </header>
+    <!-- Sección de productos con buscador y filtrado -->
+    <section>
+        <h3>Nuestros productos!</h3>
+
+        <!-- Barra de búsqueda:
+         - role="search": indica esta area es un buscador.
+         - aria-label: describe la función para lectores de pantalla. -->
+        <div class="BarraBusqueda" role="search" aria-label="Buscador de productos">
+
+            <!-- Campo de búsqueda:
+             - type="search": indica que se realiza busquedas .
+             - placeholder: texto guía dentro del input.
+             - autocomplete="off": evita sugerencias del navegador.-->
+            <label id="cuadro1">Buscar productos
+                <input id="Buscar" type="search" placeholder="Buscador" autocomplete="off" />
+            </label>
+        </div>
+
+        <!-- Controles de filtrado por categoría:
+         - select: lista desplegable para elegir filtros.
+         - aria-label: describe la función del selector.
+         - option: cada opción representa una categoría diferente. -->
+        <div class="controls">
+            <label>Filtrar por:</label>
+            <select id="categoria" aria-label="Filtrar por categoría">
+                <option value="Tlc">Todas las categorías</option>
+                <option value="b">Botellas</option>
+                <option value="acc">Accesorios</option>
+            </select>
+        </div>
+    </section>
+    <section class="contenedor-productos">
+    <!-- Primer producto -->
+    <article class="productos" data-cat="b">
+        <!-- Contenedor de imagen del producto -->
+        <div class="img-producto">
+            <img src="../img/Botella.png" alt="Botella de acero inoxidable">
+        </div>
+        <h4 class="nombreBotella">PureBottle</h4>
+        <!--El span se usa solo para ocupar el espacio suficiente-->
+        <span class="precio">20.000 ARS</span>
+
+        <!-- Descripción del producto -->
+        <p class="descripcion">Mantente hidratado con nuestra botella purificadora de acero inoxidable. Filtra impurezas
+            y mejora el sabor del agua al instante, ideal para casa, oficina o actividades al aire libre. Capacidad de
+            600ml, ligera y facil de tranportar, disponible en varios colores.</p>
+        <!-- Botón para agregar al carrito -->
+        <button class="btn-agregar">Agregar al carrito</button>
+    </article>
+
+    <!-- Segundo producto -->
+    <article class="productos" data-cat="acc">
+        <div class="img-producto">
+            <img src="../img/funda negra.png" alt="Funda de neopreno para botella">
+        </div>
+
+        <h4 class="nombreBotella">Funda protectora</h4>
+        <span class="precio">7.000 ARS</span>
+
+        <p class="descripcion">Mantén tu bebida a la temperatura ideal y protegé tu botella con esta funda de neopreno
+            resistente. Su material flexible y duradero amortigua los golpes, evita rayaduras y ofrece un agarre cómodo.
+            Ideal para llevar tu botella a todas partes con estilo y seguridad.</p>
+
+        <!-- Selector de colores para el producto -->
+        <label class="coloresElegir">Color:</label>
+        <select class="color">
+            <!-- data-img se usa con JS para cambiar la imagen según el color -->
+            <option value="rosa" data-img="../img/Funda rosa.png">Rosa</option>
+            <option value="celeste" data-img="../img/Funda celeste.png">Celeste</option>
+            <option value="negro" data-img="../img/funda negra.png">Negro</option>
+        </select>
+
+        <button class="btn-agregar">Agregar al carrito</button>
+    </article>
+
+    <!-- Tercer producto -->
+    <article class="productos" data-cat="acc">
+        <div class="img-producto">
+            <img src="../img/FiltroMineral.png" alt="Filtro de mineral para botella">
+        </div>
+
+        <h4 class="nombreBotella">Filtro Mineral+</h4>
+        <span class="precio">17.000 ARS</span>
+
+        <p class="descripcion">Purifica el agua eliminando cloro e impurezas, mientras agrega minerales como magnesio y
+            calcio para un sabor más fresco y natural. Ideal para mantenerte hidratado con agua pura en todo momento.
+            ADVERTENCIA: Solo compatible con botellas que tengan boquilla o retén interno.</p>
+
+        <button class="btn-agregar">Agregar al carrito</button>
+    </article>
+
+    <!-- Cuarto producto -->
+    <article class="productos" data-cat="acc">
+        <div class="img-producto">
+            <img src="../img/cepillo.webp" alt="Cepillo de limpieza profunda para botella">
+        </div>
+
+        <h4 class="nombreBotella">Cepillo limpiador de botella</h4>
+        <span class="precio">10.000 ARS</span>
+
+        <p class="descripcion">Conservá tu botella siempre impecable. Su diseño delgado y cerdas suaves eliminan
+            residuos y bacterias sin dañar el interior. Ideal para botellas de 600 ml, permite una limpieza profunda y
+            cómoda.</p>
+
+        <button class="btn-agregar">Agregar al carrito</button>
+    </article>
+
+    <!-- Quinto producto -->
+    <article class="productos" data-cat="b">
+        <div class="img-producto">
+            <img src="../img/Tapa Rosa.png" alt="Tapa alternativa color rosa">
+        </div>
+
+        <h4 class="nombreBotella">Tapa alternativa</h4>
+        <span class="precio">4.500 ARS</span>
+
+        <p class="descripcion">Tapa adicional para tu botella de acero inoxidable. Ideal para tener un repuesto o
+            adaptar tu botella a diferentes usos. Resistente, práctica y totalmente compatible con el diseño PureBottle.
+        </p>
+
+        <!-- Selector de colores para el producto -->
+        <label class="coloresElegir">Color:</label>
+        <select class="color">
+            <option value="rosa" data-img="../img/Tapa Rosa.png">Rosa</option>
+            <option value="verde" data-img="../img/Tapa Verde.png">Verde</option>
+            <option value="azul" data-img="../img/Tapa Azul.png">Azul</option>
+            <option value="gris" data-img="../img/Tapa Negra.png">Gris</option>
+        </select>
+
+        <button class="btn-agregar">Agregar al carrito</button>
+    </article>
+</section>
+    <footer>
+        <p>© 2024 Soluciones Diarias S.A. Todos los derechos reservados.</p>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <a href="../index.html">
+                    <img src="../img/PureBottle.png" alt="Logo de PureBottle">
+                </a>
+            </div>
+
+            <div class="icons">
+                <a href="../img/redes.mp4"><img class="icon" src="../img/logoTiktok.png" alt="TikTok"></a>
+                <a href="../img/redes.mp4"><img class="icon" src="../img/logoIg.png" alt="Instagram"></a>
+            </div>
+        </div>
+    </footer>
+    <script src="../javaScript/producto.js"></script>
+</body>
+</html>

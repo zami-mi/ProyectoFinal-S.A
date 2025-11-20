@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/Log.css">
+    <link href="https://fonts.googleapis.com/css2?family=Stack+Sans+Headline:wght@200..700&display=swap" rel="stylesheet">
+    <!--TITULO-->
+    <link href="https://fonts.googleapis.com/css2?family=Stack+Sans+Notch:wght@200..700&display=swap" rel="stylesheet">
+
+    <title>Iniciar Sesion - Soluciones Diarias</title>
+</head>
+
+<body>
+    <header>
+    <div class="logo">
+        <a href="../index.html">
+           <h1>Soluciones Diarias</h1>
+        </a>
+    </div>
+    <nav>
+        <li><a href="../index.html">INICIO</a></li>
+        <li><a href="historia.html">HISTORIA</a></li>
+        <li><a href="SobreNos.html">SOBRE NOSOTROS</a></li>
+        <li><a href="productos.html">PRODUCTOS</a></li>
+        <li><a href="contactanos.html">CONTACTANOS</a></li>
+    </nav>
+    <div class="acciones">
+        <div class="carrito">
+            <a href="./carrito.html">
+                <img src="../img/carritoCompras.png" alt="Carrito">
+            </a>
+        </div>
+
+    <div class="register">
+        <a id="btn-login-logout" class="btn-usuario">...</a>
+    </div>
+
+    </header>
+    <!-- Sección del formulario de inicio de sesión -->
+    <section>
+
+        <!-- Formulario principal de login:
+     - id="login-form": identifica el formulario.-->
+        <form id="login-form">
+
+            <!-- Campo para ingresar el correo electrónico:
+     - type="email": valida automáticamente el formato del correo.
+     - placeholder: texto guía que aparece dentro del campo.
+     - required: obliga a completar el campo antes de enviar.-->
+            <input id="login-email" type="email" placeholder="Correo electrónico" required>
+
+            <!-- Campo para ingresar la contraseña:
+     - type="password": oculta los caracteres ingresados.
+     - placeholder: indica qué debe ingresar el usuario.
+     - required: impide enviar el formulario vacío. -->
+            <input id="login-pass" type="password" placeholder="Contraseña" required>
+
+            <!-- Botón para enviar el formulario e iniciar sesión:
+     - type="submit": envía el formulario al hacer clic.-->
+            <button type="submit">Iniciar sesión</button>
+
+            <!-- Texto informativo para usuarios sin cuenta -->
+            <p>¿No tenés cuenta?</p>
+
+            <!--Enlace hacia la página de registro-->
+            <a href="../pages/register.html">Registrarse</a>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2024 Soluciones Diarias S.A. Todos los derechos reservados.</p>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <a href="../index.html">
+                    <img src="../img/PureBottle.png" alt="Logo de PureBottle">
+                </a>
+            </div>
+
+            <div class="icons">
+                <a href="../img/redes.mp4"><img class="icon" src="../img/logoTiktok.png" alt="TikTok"></a>
+                <a href="../img/redes.mp4"><img class="icon" src="../img/logoIg.png" alt="Instagram"></a>
+            </div>
+        </div>
+    </footer>
+    <script src="../javaScript/main.js"></script>
+</body>
+
+</html>

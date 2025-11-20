@@ -1,0 +1,207 @@
+/*CSS para el header*/
+/* Header fijo arriba para que siempre quede visible */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 97%; /* no es 100% para que no quede tan pegado */
+    background: #daf4ed;
+    padding: 10px 30px;
+    display: flex; /* acomodo el logo y menú en fila */
+    justify-content: space-between; /* uno a cada lado */
+    align-items: center;
+    z-index: 1000; /* para que quede encima del contenido */
+    box-shadow: 0 2px 10px rgb(155, 155, 155); /* sombrita para que destaque */
+}
+
+.logo {
+    display: flex; /* para alinear logo y texto */
+    align-items: center;
+}
+
+.logo a {
+    text-decoration: none; /* le saco el subrayado */
+}
+
+/* Estilos del título del logo */
+.logo h1 {
+    font-size: 28px;
+    color: #2e5f4f;
+    letter-spacing: 1px; /* separo un poco las letras */
+    transition: 0.3s ease; /* para animación del hover de forma suave*/
+    font-family: "Stack Sans Notch", sans-serif;
+}
+
+nav {
+    display: flex; /* menú horizontal */
+    gap: 25px; /* separo los links */
+}
+
+nav li {
+    list-style: none; /* saco los puntitos */
+}
+
+nav a {
+    text-decoration: none;
+    color: #0f6c59;
+    font-weight: 600; /* un poquito más grueso */
+    transition: 0.3s; /* animación suave */
+}
+
+nav a:hover {
+    color: #198f78; /* color más fuerte al pasar */
+}
+
+/* Botón de registro con formato distinto para que destaque */
+.register a {
+    text-decoration: none;
+    padding: 8px 15px;
+    background: #198f78;    
+    color: white;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+/* Cambio de color al pasar el mouse en el botón */
+.register a:hover {
+    background: #0f6c59;
+}
+
+/* Acciones de la derecha (carrito + registro) */
+.acciones {
+    display: flex; /* alineo en fila */
+    align-items: center;
+    gap: 15px; /* separación entre iconos */
+}
+
+/* Icono del carrito */
+.carrito img {
+    width: 30px;
+    cursor: pointer; /* cursor de mano, diciendo que puede hacer un click */
+    transition: 0.3s;
+}
+
+.carrito img:hover {
+    transform: scale(1.15); /* agrandado suave */
+}
+
+/* Contenedor del carrusel */
+.carrousel {
+    position: relative;
+    width: 1000px; /* ancho del carrusel */
+    margin: 0 auto; /* Centrado*/
+    overflow: hidden; /* esconde lo que se sobresalga*/
+}
+
+/* Cada slide oculto */
+.slide {
+    display: none;
+}
+
+/* El slide activo se muestra */
+.slide.active {
+    display: block;
+}
+
+.carrousel img {
+    width: 100%; /* que ocupe todo el carrusel */
+    border-radius: 10px;
+}
+
+/* Flechas del carrusel */
+.prev, .next {
+    position: absolute;
+    top: 50%; /* las pongo a la mitad */
+    transform: translateY(-50%);
+    background-color: rgba(0,0,0,0.5); /* fondo oscuro transparente */
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 24px; /* tamaño de flecha */
+    border-radius: 50%; /* que parezcan botones redondos */
+}
+
+.prev { left: 10px; }  /* flecha izquierda */
+.next { right: 10px; } /* flecha derecha */
+
+/* Caja de cada sección general */
+section {
+    background: #e6faf5; /* verde clarito */
+    margin: 40px auto;
+    padding: 30px 40px;
+    max-width: 900px; /* para que no sea gigantesco */
+    border-radius: 15px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.15); /* sombrita suave */
+    text-align: center;
+}
+
+section p {
+    color: #064e52;
+    line-height: 1.6; /* para que sea cómodo leer */
+    margin-bottom: 20px;
+}
+
+section h3 {
+    color: #198f78;  
+    margin-top: 20px;
+}
+
+/* Botón dentro de las secciones */
+section a {
+    display: inline-block;
+    text-decoration: none;
+    background: #198f78;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+section a:hover {
+    background: #0f6c59; 
+}
+
+/* Fondo distinto para la sección productos */
+#producto {
+    background: #d9f7f2;
+}
+
+/* Le dejo espacio arriba para que el header fijo no tape nada */
+body {
+    padding-top: 90px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Footer con centrado */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #f1f1f1;
+}
+
+footer p {
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+/* Contenido del footer acomodado en fila */
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Tamaño del logo del pie */
+.footer-logo {
+    width: 100px;  
+}
+
+/* Iconos de redes */
+.icon {
+    width: 30px; 
+    height: auto;
+    margin: 0 5px;
+}

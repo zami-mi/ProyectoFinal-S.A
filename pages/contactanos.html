@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactanos - Soluciones Diarias</title>
+    <link rel="stylesheet" href="../style/contact.css">
+    <link href="https://fonts.googleapis.com/css2?family=Stack+Sans+Headline:wght@200..700&display=swap" rel="stylesheet">
+    <!--TITULO-->
+    <link href="https://fonts.googleapis.com/css2?family=Stack+Sans+Notch:wght@200..700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="../index.html">
+                <h1>Soluciones Diarias</h1>
+            </a>
+        </div>
+        <nav>
+            <li><a href="../index.html">INICIO</a></li>
+            <li><a href="historia.html">HISTORIA</a></li>
+            <li><a href="SobreNos.html">SOBRE NOSOTROS</a></li>
+            <li><a href="productos.html">PRODUCTOS</a></li>
+            <li><a href="contactanos.html">CONTACTANOS</a></li>
+        </nav>
+    <div class="acciones">
+        <div class="carrito">
+            <a href="./carrito.html">
+                <img src="../img/carritoCompras.png" alt="Carrito">
+            </a>
+        </div>
+    <div class="register">
+        <a id="btn-login-logout" class="btn-usuario">...</a>
+    </div>
+
+    </header>
+    <!--Seccion para el formulario de consultas-->
+    <section>
+        <h3>Contáctanos</h3>
+        <p>Si tienes alguna pregunta o sugerencia, no dudes en enviarnos un mensaje a través del siguiente formulario:
+        </p>
+        <!--El inicio del formulario que tiene una accion cuando el usuario lo envie mediante el uso de un API para que le lleguen a los directivos de la empresa-->
+        <form action="https://formspree.io/f/xdkynzll" method="post" class="contact-form">
+            <!--Campos que el usuario debe rellenar de forma obligatoria-->
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="telefono">Telefono:</label>
+            <input type="number" id="telefono" name="telefono" required>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" required placeholder="Escribí tu consulta..."></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+    <footer>
+        <p>© 2024 Soluciones Diarias S.A. Todos los derechos reservados.</p>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <a href="../index.html">
+                    <img src="../img/PureBottle.png" alt="Logo de PureBottle">
+                </a>
+            </div>
+
+            <div class="icons">
+                <a href="../img/redes.mp4"><img class="icon" src="../img/logoTiktok.png" alt="TikTok"></a>
+                <a href="../img/redes.mp4"><img class="icon" src="../img/logoIg.png" alt="Instagram"></a>
+            </div>
+        </div>
+    </footer>
+    <script src="../javaScript/register.js"></script>
+</body>
+
+</html>

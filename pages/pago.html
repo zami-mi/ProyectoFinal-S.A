@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Pago - Soluciones Diarias</title>
+    <link rel="stylesheet" href="../style/pago.css">
+    <link href="https://fonts.googleapis.com/css2?family=Stack+Sans+Headline:wght@200..700&display=swap" rel="stylesheet">
+    <!--TITULO-->
+    <link href="https://fonts.googleapis.com/css2?family=Stack+Sans+Notch:wght@200..700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+    <div class="logo">
+        <a href="../index.html">
+            <h1>Soluciones Diarias</h1>
+        </a>
+    </div>
+    <nav>
+        <li><a href="../index.html">INICIO</a></li>
+        <li><a href="historia.html">HISTORIA</a></li>
+        <li><a href="SobreNos.html">SOBRE NOSOTROS</a></li>
+        <li><a href="productos.html">PRODUCTOS</a></li>
+        <li><a href="contactanos.html">CONTACTANOS</a></li>
+    </nav>
+    <div class="acciones">
+        <div class="carrito">
+            <a href="./carrito.html">
+                <img src="../img/carritoCompras.png" alt="Carrito">
+            </a>
+        </div>
+
+        <div class="register">
+            <a id="btn-login-logout" class="btn-usuario">...</a>
+        </div>
+
+    </div>
+    </header>
+    <main>
+        <h2>Formulario de pago y envío</h2>
+        <section class="resumen-compra">
+            <h3>Resumen de tu compra:</h3>
+             <!-- Aquí se mostrarán los productos agregados al carrito -->
+            <div id="resumen-items"></div>
+            <!-- Total de la compra, se actualizará dinámicamente con JS -->
+            <p>Total: <span id="total-pago">0 ARS</span></p>
+        </section>
+
+        <section class="formulario-pago">
+            <h3>Datos de envío</h3>
+            <form id="formPago">
+                <!--Campo donde rellenara el nombre completo-->
+                <label>Nombre completo:<input type="text" name="nombre" required></label>
+                <!--Campo donde rellenara su direccion-->
+                <label>Dirección:<input type="text" name="direccion" required></label>
+                <!--Campo donde rellenara la ciudad donde vive-->
+                <label>Ciudad:<input type="text" name="ciudad" required></label>
+
+                <h3>Datos de tarjeta</h3>
+                <!--Campo donde rellenara el nombre de su tarjeta-->
+                <label>Nombre en tarjeta:<input type="text" name="nombreTarjeta" required></label>
+                <!--Campo donde rellenara el numero de su tarjeta con un maximo de 16 numeros-->
+                <label>Número de tarjeta:<input type="text" name="numTarjeta" maxlength="16" required></label>
+                <!--Campo donde rellenara la fecha de vencimiento con ayuda del type que nos da un selector para el dia y el año-->
+                <label>Vencimiento:<input type="month" name="vencimiento" required></label>
+                <!--Campo donde llenara el codigo de seguridad con un maximo de 3 caracteres-->
+                <label>CVV:<input type="text" name="cvv" maxlength="3" required></label>
+                <button type="submit">Pagar</button>
+            </form>
+        </section>
+    </main> 
+    <footer>
+        <p>© 2024 Soluciones Diarias S.A. Todos los derechos reservados.</p>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <a href="../index.html">
+                    <img src="../img/PureBottle.png" alt="Logo de PureBottle">
+                </a>
+            </div>
+
+            <div class="icons">
+                <a href="../img/redes.mp4"><img class="icon" src="../img/logoTiktok.png" alt="TikTok"></a>
+                <a href="../img/redes.mp4"><img class="icon" src="../img/logoIg.png" alt="Instagram"></a>
+            </div>
+        </div>
+    </footer>
+    <script src="../javaScript/pago.js"></script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/carrito.css">
+    <link href="https://fonts.googleapis.com/css2?family=Stack+Sans+Headline:wght@200..700&display=swap" rel="stylesheet">
+    <!--TITULO-->
+    <link href="https://fonts.googleapis.com/css2?family=Stack+Sans+Notch:wght@200..700&display=swap" rel="stylesheet">
+
+    <title>Carrito - Soluciones Diarias</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="../index.html">
+                <h1>Soluciones Diarias</h1>
+            </a>
+        </div>
+        <nav>
+            <li><a href="../index.html">INICIO</a></li>
+            <li><a href="historia.html">HISTORIA</a></li>
+            <li><a href="SobreNos.html">SOBRE NOSOTROS</a></li>
+            <li><a href="productos.html">PRODUCTOS</a></li>
+            <li><a href="contactanos.html">CONTACTANOS</a></li>
+        </nav>
+        <div class="acciones">
+            <div class="carrito">
+                <a href="./carrito.html">
+                    <img src="../img/carritoCompras.png" alt="Carrito">
+                </a>
+            </div>
+
+        <div class="register">
+            <a id="btn-login-logout" class="btn-usuario">...</a>
+        </div>
+
+        </div>
+    </header>
+    <!-- Contenedor del carrito -->
+    <!-- Contenedor general del carrito -->
+    <section class="carritoCompras">
+        <h2>Tu carrito de compras</h2>
+        <!-- Contenedor de productos (vacío al inicio, JS agregará aquí los items) -->
+        <div class="carrito-items">
+            <!-- Cada producto que se agregue seguirá esta estructura:
+        <div class="carrito-item">
+            <div class="carrito-img">
+                <img src="ruta-de-la-imagen" alt="Nombre del producto">
+            </div>
+            <div class="carrito-info">
+                <h4>Nombre del producto</h4>
+                <span class="carrito-precio">Precio</span>
+                <label>Cantidad:</label>
+                <input type="number" value="1" min="1">
+            </div>
+            <button class="btn-eliminar">Eliminar</button>
+        </div>
+        -->
+        </div>
+
+        <!-- Total del carrito -->
+        <div class="carrito-total">
+            <h3>Total: <span id="total-carrito">0 ARS</span></h3>
+            <button class="btn-comprar">Finalizar compra</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 Soluciones Diarias S.A. Todos los derechos reservados.</p>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <a href="../index.html">
+                    <img src="../img/PureBottle.png" alt="Logo de PureBottle">
+                </a>
+            </div>
+
+            <div class="icons">
+                <a href="../img/redes.mp4"><img class="icon" src="../img/logoTiktok.png" alt="TikTok"></a>
+                <a href="../img/redes.mp4"><img class="icon" src="../img/logoIg.png" alt="Instagram"></a>
+            </div>
+        </div>
+    </footer>
+    <script src="../javaScript/carrito.js"></script>
+</body>
+
+</html>

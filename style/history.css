@@ -1,0 +1,297 @@
+/*GENERAL*/
+body {
+    padding-top: 90px; 
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+/*HEADER + MENU*/
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 97%;
+    background: #daf4ed;
+    padding: 10px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgb(155, 155, 155);
+}
+.logo {
+    display: flex;
+    align-items: center;
+}
+.logo a {
+    text-decoration: none;
+}
+.logo h1 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #2e5f4f;
+    letter-spacing: 1px;
+    transition: 0.3s ease;
+    font-family: "Stack Sans Notch", sans-serif;
+}
+.logo h1:hover {
+    color: #3b7a67;
+}
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav li {
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: #0f6c59;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #198f78; 
+}
+/*CARRITO + REGISTRO*/
+.register a {
+    text-decoration: none;
+    padding: 8px 15px;
+    background: #198f78;    
+    color: white;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.register a:hover {
+    background: #0f6c59;
+}
+.acciones {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.carrito img {
+    width: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.carrito img:hover {
+    transform: scale(1.15);
+}
+
+
+section {
+    background: #e6faf5;
+    margin: 40px auto; /* 40px arriba y abajo, centrado horizontalmente */
+    padding: 40px 50px;
+    max-width: 900px;
+    border-radius: 15px;
+    box-shadow: 0 3px 12px rgb(117, 117, 117);
+}
+
+/* Título principal */
+section h4 {
+    text-align: center;
+    color: #198f78;
+    margin-bottom: 25px;
+    font-size: 26px;
+}
+
+/* Párrafos */
+section p {
+    color: #064e52;
+    line-height: 1.7; /* Altura de línea, hace que el texto se pueda leer*/
+    margin-bottom: 22px;
+    text-align: justify;
+}
+
+/* Imágenes centradas con borde suave */
+.imagen {
+    text-align: center;
+    margin: 25px 0;
+}
+
+.imagen img {
+    height: 300px;
+    width: 300px;
+    max-width: 600px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+}
+
+/* Lista de fases de desarrollo */
+section ul {
+    background: #d9f7f2;
+    padding: 20px 25px;
+    border-radius: 12px;
+    margin-top: 25px;
+    color: #064e52;
+    list-style: none;  /* Quita los puntos predeterminados de la lista */
+    line-height: 1.7;
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.1);
+}
+
+section ul li {
+    margin-bottom: 12px;
+    font-weight: 500;
+}
+
+/* Título dentro de la lista, hace q se ponga el titulo encima con estilo propio */
+section ul::before {
+    content: "Fases de desarrollo:";
+    display: block;
+    font-weight: 700;
+    color: #198f78;
+    margin-bottom: 12px;
+    font-size: 18px;
+}
+
+/*FOOTER*/
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #f1f1f1;
+}
+
+footer p {
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo img {
+    width: 100px;  
+}
+
+
+.icon {
+    width: 30px; 
+    height: auto;
+    margin: 0 5px;
+}
+/* ================================
+   RESPONSIVE — PANTALLAS MEDIANAS
+   ================================ */
+@media (max-width: 900px) {
+
+    header {
+        padding: 10px 20px;
+        width: 100%;
+    }
+
+    .logo h1 {
+        font-size: 22px;
+    }
+
+    nav {
+        gap: 15px;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    .register a {
+        padding: 6px 12px;
+        font-size: 14px;
+    }
+
+    /* Secciones */
+    section {
+        padding: 30px 25px;
+        margin: 110px auto;
+        max-width: 90%;
+    }
+
+    section p {
+        font-size: 15px;
+    }
+
+    .imagen img {
+        width: 80%;
+        height: auto;
+    }
+
+    /* Login */
+    #login-form {
+        width: 80%;
+    }
+
+    #login-form input {
+        width: 100%;
+    }
+}
+
+
+/* ================================
+   RESPONSIVE — CELULARES (CHICO)
+   ================================ */
+@media (max-width: 600px) {
+
+    /* Header más compacto */
+    header {
+        flex-direction: column;
+        gap: 10px;
+        padding: 15px;
+        width: 100%;
+        text-align: center;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    nav a {
+        font-size: 13px;
+    }
+
+    /* Secciones */
+    section {
+        max-width: 95%;
+        padding: 25px 18px;
+        margin-top: 120px;
+    }
+
+    section h4 {
+        font-size: 22px;
+    }
+
+    section p {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    /* Imagen */
+    .imagen img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Login */
+    #login-form {
+        width: 100%;
+        padding: 25px;
+    }
+
+    #login-form input {
+        width: 100%;
+    }
+
+    footer .footer-content {
+        flex-direction: column;
+        gap: 10px;
+    }
+}

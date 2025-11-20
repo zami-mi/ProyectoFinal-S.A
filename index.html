@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soluciones Diarias</title>
+    <link rel="stylesheet" href="style/index.css">
+    <!--FUENTES - BODY-->
+    <link href="https://fonts.googleapis.com/css2?family=Stack+Sans+Headline:wght@200..700&display=swap"
+        rel="stylesheet">
+    <!--TITULO-->
+    <link href="https://fonts.googleapis.com/css2?family=Stack+Sans+Notch:wght@200..700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <!--Esta seccion es un header que divide de forma invisible el menu pricipal de las secciones de las otras paginas-->
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <h1>Soluciones Diarias</h1>
+            </a>
+        </div>
+        <!--Seccion dirigida para el menu de la pagina-->
+        <nav>
+            <li><a href="index.html">INICIO</a></li>
+            <li><a href="pages/historia.html">HISTORIA</a></li>
+            <li><a href="pages/SobreNos.html">SOBRE NOSOTROS</a></li>
+            <li><a href="pages/productos.html">PRODUCTOS</a></li>
+            <li><a href="pages/contactanos.html">CONTACTANOS</a></li>
+        </nav>
+        <!--Boton que lleva al registro o inicio de sesion a la pagina-->
+        <div class="acciones">
+            <div class="carrito">
+                <a href="pages/carrito.html">
+                    <img src="img/carritoCompras.png" alt="Carrito">
+                </a>
+            </div>
+
+            <div class="register">
+                <a id="btn-login-logout" class="btn-usuario">...</a>
+            </div>
+    </header>
+    <div class="carrousel">
+        <div class="slide active">
+            <a href="pages/historia.html"><img src="img/ArroyoCAN1.png" alt="Arroyo de San Juan"></a>
+        </div>
+        <div class="slide">
+            <a href="pages/productos.html"><img src="img/Envios.png" alt="Novedades PureBottle"></a>
+        </div>
+        <div class="slide">
+            <a href="pages/productos.html"><img src="img/NuevaBotella.png" alt="Últimos productos"></a>
+        </div>
+        <button class="prev">&#10094;</button>
+        <button class="next">&#10095;</button>
+    </div>
+    <!--Seccion que tiene una breve descripcion del objetivo de la empresa PureBottle acerca de su producto -->
+    <section id="inicio">
+        <p id="mensaje-usuario"></p>
+
+        <p>En PureBottle creemos que el acceso a agua de calidad no debería ser un lujo, sino un derecho. Nuestro
+            propósito es revolucionar la forma en que las personas consumen agua, ofreciendo botellas purificadoras
+            reutilizables que combinan diseño, innovación y sostenibilidad.
+        </p>
+        <p>Cada botella cuenta con un cartucho filtrante intercambiable que elimina hasta el 90% del cloro, reduce
+            sedimentos y mejora notablemente el sabor. Con una capacidad de 600 ml, tapas herméticas a prueba de
+            fugas y un diseño ergonómico, PureBottle es ideal para la oficina, el hogar, los estudios, el gimnasio o
+            actividades al aire libre.</p>
+        <p>Pero vamos más allá: nuestro compromiso también es ecológico. Queremos reducir el consumo de plástico de un
+            solo uso y contribuir a un planeta más limpio. Cada persona que elige PureBottle ayuda a disminuir toneladas
+            de residuos y apuesta por un futuro más saludable para todos.</p>
+        <h3><i>Cuidamos de vos, cuidamos del planeta, gota a gota.</i></h3>
+    </section>
+    <!--Tiene un boton con un direccionamiento hacia la pagina de registro, para que el usuario se cree una cuenta y pueda establecer su direccion-->
+    <section>
+        <p>¿Querés recibir nuestros productos en tu casa?
+            Adquirí productos bajo normas IVESS en tu domicilio con entrega sin cargo. Buscá un asociado IVESS de
+            acuerdo a tu zona o provincia, y realizá tu pedido.</p>
+        <p>¡Hidratate de forma inteligente con PureBottle!
+            Botellas purificadoras reutilizables con filtros intercambiables que eliminan cloro, sedimentos y
+            mejoran el sabor del agua. Diseño moderno, envío gratis y calidad certificada.</p>
+        <a class="btn-usuario" href="pages/productos.html">Ver catalogo</a>
+    </section>
+    <!--El footer, que seria parecido al pie de pagina que cuenta con el logo de la empresa y links hacia las redes sociales-->
+    <footer>
+        <p>© 2024 Soluciones Diarias S.A. Todos los derechos reservados.</p>
+
+        <div class="footer-content">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="img/PureBottle.png" alt="Logo de PureBottle">
+                </a>
+            </div>
+
+            <div class="icons">
+                <a href="img/redes.mp4"><img class="icon" src="img/logoTiktok.png" alt="TikTok"></a>
+                <a href="img/redes.mp4"><img class="icon" src="img/logoIg.png" alt="Instagram"></a>
+            </div>
+        </div>
+    </footer>
+    <script src="javaScript/main.js"></script>
+    <script src="javaScript/index.js"></script>
+</body>
+
+</html>

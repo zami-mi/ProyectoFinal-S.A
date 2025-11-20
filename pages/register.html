@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrate - Soluciones Diarias</title>
+    <link rel="stylesheet" href="../style/register.css">
+    <link href="https://fonts.googleapis.com/css2?family=Stack+Sans+Headline:wght@200..700&display=swap" rel="stylesheet">
+    <!--TITULO-->
+    <link href="https://fonts.googleapis.com/css2?family=Stack+Sans+Notch:wght@200..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+    <div class="logo">
+        <a href="../index.html">
+            <h1>Soluciones Diarias</h1>
+        </a>
+    </div>
+    <nav>
+        <li><a href="../index.html">INICIO</a></li>
+        <li><a href="historia.html">HISTORIA</a></li>
+        <li><a href="SobreNos.html">SOBRE NOSOTROS</a></li>
+        <li><a href="productos.html">PRODUCTOS</a></li>
+        <li><a href="contactanos.html">CONTACTANOS</a></li>
+    </nav>
+    <div class="acciones">
+        <div class="carrito">
+            <a href="./carrito.html">
+                <img src="../img/carritoCompras.png" alt="Carrito">
+            </a>
+        </div>
+
+    <div class="register">
+        <a id="btn-login-logout" class="btn-usuario">...</a>
+    </div>
+
+
+    </header>
+    <section>
+        <!-- Formulario de registro -->
+        <form id="register-form"> <!-- id: identifica el formulario para CSS o JavaScript -->
+
+            <!-- Campo de texto para que el usuario escriba su nombre -->
+            <input id="reg-nombre" type="text" placeholder="Nombre" required>
+            <!-- type="text": permite ingresar texto normal  
+             placeholder: texto guía dentro del campo  
+             required: obliga a completarlo antes de enviar -->
+
+            <!-- Campo para ingresar correo electrónico -->
+            <input id="reg-email" type="email" placeholder="Correo electrónico" required>
+            <!-- type="email": valida que tenga formato de correo -->
+
+            <!-- Campo para ingresar la contraseña -->
+            <input id="reg-pass" type="password" placeholder="Contraseña" required>
+            <!-- type="password": oculta lo que escribe el usuario -->
+
+            <!-- Botón para enviar el formulario -->
+            <button type="submit">Registrarse</button>
+            <!-- type="submit": al hacer clic, envia el formulario -->
+
+            <!-- Texto para guiar al usuario si ya tiene cuenta -->
+            <p>¿Ya tenes cuenta?</p>
+
+            <!-- Enlace para ir a la página de inicio de sesión -->
+            <a href="../pages/iniciarSesion.html">Iniciar sesion</a>
+            <!--href: indica la ruta del archivo al que llevará el enlace-->
+        </form>
+    </section>
+    <footer>
+        <p>© 2024 Soluciones Diarias S.A. Todos los derechos reservados.</p>
+
+        <div class="footer-content">
+            <div class="footer-logo">
+                <a href="../index.html">
+                    <img src="../img/PureBottle.png" alt="Logo de PureBottle">
+                </a>
+            </div>
+
+            <div class="icons">
+                <a href="../img/redes.mp4"><img class="icon" src="../img/logoTiktok.png" alt="TikTok"></a>
+                <a href="../img/redes.mp4"><img class="icon" src="../img/logoIg.png" alt="Instagram"></a>
+            </div>
+        </div>
+    </footer>
+    <script src="../javaScript/main.js"></script>
+</body>
+
+</html>
